@@ -13,9 +13,15 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     port: 3000
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: path.join(__dirname, 'src', 'index.html')
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+        template: path.join(__dirname, 'src', 'index.html')
+      }),
+    new HtmlWebpackPlugin({
+        filename: 'style.css',
+        template: path.join(__dirname, 'src', 'style.css')
+      })
+  ],
   module: {
     rules: [
       {
