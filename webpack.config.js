@@ -15,5 +15,13 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     template: path.join(__dirname, 'src', 'index.html')
-  })]
+  })],
+  module: {
+    rules: [
+      {
+        test: /\.html$/,
+        use: [ 'html-loader' ]
+      }
+    ]
+  }
 };

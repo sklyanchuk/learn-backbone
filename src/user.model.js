@@ -4,7 +4,7 @@ import Backbone from 'backbone';
 
 export default Backbone.Model.extend({
   defaults: {
-    name: 'Artem Sklyacnhuk',
+    name: 'Artem Sklyanchuk',
     city: 'Moscow'
   },
   initialize() {
